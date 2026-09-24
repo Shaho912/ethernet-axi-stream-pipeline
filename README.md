@@ -1,6 +1,6 @@
 # FPGA Ethernet Frame Processer
 
-A hand-written SystemVerilog AXI-Stream pipeline that ingests raw Ethernet frames on a Zynq-7000 SoC (Digilent Arty Z7-20), classifies and routes them by UDP destination port, extracts UDP payloads, and decodes a real binary market-data protocol (Nasdaq TotalView-ITCH 5.0) out of the matched traffic.
+A SystemVerilog AXI-Stream pipeline that ingests raw Ethernet frames on a Zynq-7000 SoC (Digilent Arty Z7-20), classifies and routes them by UDP destination port, extracts UDP payloads, and decodes a real binary market-data protocol (Nasdaq TotalView-ITCH 5.0) out of the matched traffic.
 
 Data communications used: Ethernet, IPv4, and UDP for the network side, parsed in hand-written RTL rather than an offload IP. AXI-Stream (with AXI DMA) as the on-chip interconnect tying the FIFO, demux, sniffer, and parser together. Nasdaq TotalView-ITCH 5.0 as the binary application-layer protocol being decoded.
 
