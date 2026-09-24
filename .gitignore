@@ -1,0 +1,32 @@
+# Vivado / Vitis project artifacts (not included -- this repo is sources only)
+*.xpr
+*.xsa
+*.bit
+*.ltx
+*.jou
+*.log
+*.str
+.Xil/
+.metadata/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/*.xml
+vivado*.jou
+vivado*.log
+
+# Simulation artifacts
+*.vcd
+*.vvp
+a.out
+work/
+xsim.dir/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
